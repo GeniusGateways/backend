@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fbf9] group/design-root overflow-x-hidden" style='font-family: Lexend, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f3e8] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e1b0f]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e1b0f] text-lg font-bold leading-tight tracking-[-0.015em]">EcoSavvy</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e1b0f] text-sm font-medium leading-normal" href="#">Shop</a>
+              <a class="text-[#0e1b0f] text-sm font-medium leading-normal" href="#">Recipes</a>
+              <a class="text-[#0e1b0f] text-sm font-medium leading-normal" href="#">Learn</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1fe029] text-[#0e1b0f] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Log in</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e8f3e8] text-[#0e1b0f] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Join</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e8f3e8] text-[#0e1b0f] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#0e1b0f]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e8f3e8] text-[#0e1b0f] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-[#0e1b0f]" data-icon="ShoppingCart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-full"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/1aca001d-19c2-4f91-9883-d0c588bf753f.png");'
+                ></div>
+                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+                  <h1
+                    class="text-[#0e1b0f] text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center"
+                  >
+                    Get 20% off near expiry products
+                  </h1>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1fe029] text-[#0e1b0f] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Shop now</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0e1b0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recipes to reduce food waste</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a8e025bc-f77a-4597-9ce5-9702cde8422e.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Pesto Pasta</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6e08c003-9925-425c-8846-d0bdf861ce8e.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Chicken Enchiladas</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/8bdaa1b0-9dce-4264-8b19-4a7c245a3696.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Vegetable Stir Fry</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/9ec8b1af-54f8-4dad-afc6-a6f3158535f8.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Fruit Smoothie</p>
+              </div>
+            </div>
+            <h2 class="text-[#0e1b0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How to use your leftovers</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6d1ac94a-e833-4221-9798-756c7133634f.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Roasted Chicken</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/46582286-dea0-486a-a156-f3bd4d5e1d79.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Mashed Potatoes</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6468bcaf-7104-4e1f-94f5-723b6db1e41d.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Stir Fried Vegetables</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/1a57fc85-8fb9-41ed-ae5a-30e11bd606c7.png");'
+                ></div>
+                <p class="text-[#0e1b0f] text-base font-medium leading-normal">Fruit Salad</p>
+              </div>
+            </div>
+            <h2 class="text-[#0e1b0f] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Scan QR code for product origin</h2>
+            <div class="flex w-full grow bg-[#f8fbf9] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#f8fbf9] @[480px]:gap-2 aspect-[3/2] rounded-xl flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/abcf14d2-d783-4c62-8aa7-f82674d0f3b9.png");'
+                ></div>
+              </div>
+            </div>
+            <div class="flex px-4 py-3 justify-center">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e8f3e8] text-[#0e1b0f] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Scan QR Code</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -9,18 +9,29 @@ import sharp from 'sharp'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
-
+import { StudyAbroad } from './collections/StudyAborad'
+import { Mbbs } from './collections/Mbbs'
+import { Blog } from './collections/Blog'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
+// Define the Study Abroad collection
 
 export default buildConfig({
+  cors: '*',
   admin: {
     user: Users.slug,
     importMap: {
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [
+    Users,
+    Media,
+    StudyAbroad,
+    Mbbs,
+    Blog
+     // Add Study Abroad collection here
+  ],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
