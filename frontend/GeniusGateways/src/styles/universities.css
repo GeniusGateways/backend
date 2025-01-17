@@ -1,0 +1,141 @@
+/* Section Styling */
+.universities-section {
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #6a1b9a;
+    position: relative;
+  }
+  
+  .section-header h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #6a1b9a;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #6a1b9a;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #6a1b9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #6a1b9a;
+    color: white;
+  }
+  
+  .universities-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .university {
+    text-align: center;
+    width: 150px;
+    flex: 1 1 150px; /* Flex-grow for dynamic width */
+    max-width: 200px; /* Ensures maximum width constraint */
+  }
+  
+  .university img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .university:hover img {
+    transform: scale(1.05);
+  }
+  
+  .university p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets (screen width <= 768px) */
+  @media (max-width: 768px) {
+    .section-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .universities-container {
+      gap: 1rem;
+    }
+  
+    .university {
+      width: 120px;
+    }
+  
+    .university img {
+      border-radius: 8px;
+    }
+  }
+  
+  /* For mobile devices (screen width <= 480px) */
+  @media (max-width: 480px) {
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .nav-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 0.9rem;
+    }
+  
+    .universities-container {
+      gap: 0.5rem;
+    }
+  
+    .university {
+      width: 100px;
+    }
+  
+    .university img {
+      border-radius: 5px;
+    }
+  
+    .section-header {
+      gap: 1rem;
+    }
+  }
+  

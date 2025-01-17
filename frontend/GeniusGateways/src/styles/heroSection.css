@@ -1,0 +1,18 @@
+.hero {
+    background: url('../assets/backgound.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  .highlight {
+    color: #28a745;
+  }
+  

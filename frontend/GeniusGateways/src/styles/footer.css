@@ -1,0 +1,146 @@
+.footer {
+    background-color: #d1d8e0;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #e74c3c;
+  }
+  
+  .footer-contact p {
+    margin: 10px 0;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #e74c3c;
+  }
+  
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .footer-container {
+      justify-content: space-around;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      width: 120px; /* Adjust logo size for smaller screens */
+    }
+  
+    .footer-heading {
+      font-size: 1rem;
+    }
+  
+    .whatsapp-btn {
+      width: 100%; /* Make the button full-width */
+      text-align: center;
+    }
+  
+    .footer-contact p {
+      font-size: 0.8rem;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-heading {
+      font-size: 1rem;
+    }
+  
+    .footer-contact p {
+      font-size: 0.75rem;
+    }
+  
+    .social-icon {
+      font-size: 1.2rem;
+    }
+  
+    .footer-links li {
+      margin-bottom: 5px;
+    }
+  
+    .footer-links a {
+      font-size: 0.8rem;
+    }
+  }

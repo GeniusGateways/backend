@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  /* Section Header */
+  .why-choose-us .section-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Description Section */
+  .description {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .description .quote {
+    font-size: 3rem;
+    color: #8A2BE2;
+    font-weight: bold;
+  }
+  
+  .left-quote {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+  }
+  
+  .right-quote {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+  }
+  
+  /* Stats Section */
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 1rem); /* 3 columns */
+    max-width: 300px;
+    min-width: 250px;
+  }
+  
+  .stat-box h3 {
+    font-size: 1.5rem;
+    color: #6A1B9A;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .stat-box p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .description {
+      padding: 0 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .stats-container {
+      gap: 1rem;
+    }
+  
+    .stat-box {
+      flex: 1 1 calc(50% - 1rem); /* 2 columns on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .stat-box {
+      flex: 1 1 100%; /* 1 column on mobile */
+    }
+  
+    .stat-box h3 {
+      font-size: 1.3rem;
+    }
+  
+    .stat-box p {
+      font-size: 0.95rem;
+    }
+  }
+  

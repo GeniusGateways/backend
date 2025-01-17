@@ -1,0 +1,143 @@
+/* General Styling */
+.testimonials {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .promotion {
+    display: block;
+    font-size: 1rem;
+    color: #f86f51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.4rem;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Slider Styling */
+  .testimonial-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .slider-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .slider-btn:hover {
+    background-color: #d3d3d3;
+  }
+  
+  .testimonial {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .client-photo {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  blockquote {
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  blockquote p {
+    font-size: 1.1rem;
+    color: #333333;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  blockquote footer {
+    font-size: 1rem;
+    color: #555555;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-slider {
+      flex-direction: column;
+    }
+  
+    .slider-btn {
+      display: none;
+    }
+  
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    blockquote p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonial {
+      padding: 1.5rem;
+    }
+  
+    blockquote p {
+      font-size: 0.9rem;
+    }
+  
+    .section-header h2 {
+      font-size: 1.6rem;
+    }
+  
+    .client-photo {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  

@@ -1,0 +1,163 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #6a1b9a;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+  }
+  
+  ul li strong {
+    color: #e74c3c;
+  }
+  
+  /* Section Layout */
+  .study-visa {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .section-header .underline {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #e74c3c;
+    margin: 0.5rem auto;
+  }
+  
+  .study-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f4f4fc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .study-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text-content {
+    flex: 1;
+    position: relative;
+  }
+  
+  .text-content::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 100px;
+    background: linear-gradient(180deg, #e74c3c, #f87e7b);
+    border-radius: 5px;
+  }
+  
+  .image-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image-content img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets (screen width <= 768px) */
+  @media (max-width: 768px) {
+    .study-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .study-section.reverse {
+      flex-direction: column;
+    }
+  
+    .image-content img {
+      max-width: 100%;
+    }
+  
+    .text-content::before {
+      height: 60px;
+      top: 5px;
+    }
+  }
+  
+  /* Mobile Devices (screen width <= 480px) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.3rem;
+    }
+  
+    ul li {
+      font-size: 0.9rem;
+    }
+  
+    .study-section {
+      padding: 0.8rem;
+    }
+  }
+  

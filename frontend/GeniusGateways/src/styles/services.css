@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fc;
+  }
+  
+  .services-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fc;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 30px;
+  }
+  
+  .services-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card.active {
+    border: 2px solid #e74c3c;
+    transform: scale(1.05);
+  }
+  
+  .service-icon img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .slider-navigation {
+    margin-top: 20px;
+  }
+  
+  .nav-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .nav-dot.active {
+    background-color: #e74c3c;
+  }
+  
+  .slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .page-number {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .page-line {
+    width: 50px;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets (screen width <= 768px) */
+  @media (max-width: 768px) {
+    .services-slider {
+      gap: 15px; /* Reduce gap between service cards */
+    }
+  
+    .service-card {
+      padding: 15px; /* Smaller padding for smaller screens */
+      max-width: 250px;
+    }
+  
+    .service-title {
+      font-size: 1.3rem;
+    }
+  
+    .service-description {
+      font-size: 0.85rem;
+    }
+  
+    .service-icon img {
+      width: 40px; /* Scale down the icon */
+    }
+  
+    .services-title {
+      font-size: 1.8rem;
+    }
+  
+    .slider-pagination .page-number {
+      font-size: 0.9rem;
+    }
+  
+    .page-line {
+      width: 40px; /* Adjust the line width */
+    }
+  }
+  
+  /* For mobile devices (screen width <= 480px) */
+  @media (max-width: 480px) {
+    .services-container {
+      padding: 30px 15px;
+    }
+  
+    .services-title {
+      font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+  
+    .services-slider {
+      flex-direction: column; /* Stack service cards vertically */
+      gap: 15px;
+    }
+  
+    .service-card {
+      max-width: 100%; /* Use full width of the container */
+      padding: 15px;
+    }
+  
+    .service-title {
+      font-size: 1.2rem;
+    }
+  
+    .service-description {
+      font-size: 0.8rem;
+    }
+  
+    .service-icon img {
+      width: 35px; /* Scale down the icon further */
+    }
+  
+    .nav-dot {
+      width: 8px;
+      height: 8px; /* Smaller navigation dots */
+    }
+  
+    .slider-pagination .page-number {
+      font-size: 0.8rem;
+    }
+  
+    .page-line {
+      width: 30px; /* Further adjust the line width */
+    }
+  }
+  
