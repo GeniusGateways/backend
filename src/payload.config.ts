@@ -7,6 +7,7 @@ import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 
+import { Test } from './collections/Test'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { StudyAbroad } from './collections/StudyAborad'
@@ -29,7 +30,8 @@ export default buildConfig({
     Media,
     StudyAbroad,
     Mbbs,
-    Blog
+    Blog,
+    Test
      // Add Study Abroad collection here
   ],
   editor: lexicalEditor(),

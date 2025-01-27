@@ -16,6 +16,7 @@ export interface Config {
     studyabroad: Studyabroad;
     Mbbs: Mbb;
     Blog: Blog;
+    test: Test;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -27,6 +28,7 @@ export interface Config {
     studyabroad: StudyabroadSelect<false> | StudyabroadSelect<true>;
     Mbbs: MbbsSelect<false> | MbbsSelect<true>;
     Blog: BlogSelect<false> | BlogSelect<true>;
+    test: TestSelect<false> | TestSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -224,6 +226,47 @@ export interface Blog {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "test".
+ */
+export interface Test {
+  id: string;
+  title: string;
+  image: string | Media;
+  detail: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  short_detail: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -248,6 +291,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'Blog';
         value: string | Blog;
+      } | null)
+    | ({
+        relationTo: 'test';
+        value: string | Test;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -353,6 +400,18 @@ export interface MbbsSelect<T extends boolean = true> {
  * via the `definition` "Blog_select".
  */
 export interface BlogSelect<T extends boolean = true> {
+  title?: T;
+  image?: T;
+  detail?: T;
+  short_detail?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "test_select".
+ */
+export interface TestSelect<T extends boolean = true> {
   title?: T;
   image?: T;
   detail?: T;

@@ -12,11 +12,13 @@ const StudyVisaPage = () => {
 
   const fetchStudyabroad = async () => {
     try {
+
+
       console.log(`${backend_api}/api/studyabroad`);
       const req = await fetch(`${backend_api}/api/studyabroad`);
       const data = await req.json();
       console.log(data.docs[0].image.url)
-      setCountries(data.docs); // Assuming the API response has the "docs" field
+      setCountries(data.docs); // Assuming the API response has the "
     } catch (err) {
       console.log(err);
     }
